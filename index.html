@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----- Estilos ----- -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- ----- íconos ----- -->
+    <script src="https://kit.fontawesome.com/0239039983.js" crossorigin="anonymous"></script>
+    <!-- ----- Fuentes ----- -->
+    <!-- Karla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="container">
+        <header id="encabezado">
+            <nav>
+                <div class="logotipo">
+                    <img src="multimedia/logo/eduardo_logo_removebg_.png" alt="">
+                </div>
+                <div class="menu">
+                    <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/EffectGM"><i class="fa-solid fa-hashtag"></i></a>
+                    <a class="bar_menu" onclick="addClass()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="lateral_menu">
+                <a onclick="desaparecerMenu()" href="#">Inicio <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#proyectos">Proyectos <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#about">Acerca de mí <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#galeria">Galería <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#contacto">Contacto <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div data-aos="fade-right" data-aos-duration="3000" class="presentacion">
+                <h1>Diseño + <br> Desarrollo Web</h1>
+                <p>Soy desarrollador y diseñador web en las tecnologías de odoo y fuera de la herramienta. Apasionado por el mundo creativo y apasionado por brindar la mejor experiencia para el usuario.</p>
+                <div class="scroll">
+                    <a href="#proyectos"><i class="fa-solid fa-angles-down"></i></a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="subir">
+            <a href="#encabezado"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+        <section class="proyectos">
+            <h2 class="proyectos_title" id="proyectos">P R O Y E C T O S</h2>
+            <div class="proyectos__element">
+                <div data-aos="fade-right" data-aos-duration="3000"  class="proyectos__imagen">
+                    <img src="multimedia/projects/twitter_project.jpg" alt="">
+                </div>
+                <div class="proyectos__descripcion">
+                    <h2>Clon de Twitter</h2>
+                    <p>Maquetado realizado en el año 2022 inspirado 100% en twitter, realizado hasta al diseño responsivo.</p>
+                    <form action="https://edddos.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="proyectos__element">
+                <div class="proyectos__descripcion">
+                    <h2>Clon de Funimation</h2>
+                    <p>Maquetado realizado en el año 2022 inspirado 100% en la plataforma de Streaming "Funimation", dedicada a transmitir Anime.</p>
+                    <form action="https://edddos.github.io/EDDDosAnime.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="3000" class="proyectos__imagen">
+                    <img src="multimedia/projects/funimation_project.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="proyectos__element">
+                <div data-aos="fade-right" data-aos-duration="3000"  class="proyectos__imagen">
+                    <img src="multimedia/projects/portfolio_concept_project.jpg" alt="">
+                </div>
+                <div class="proyectos__descripcion">
+                    <h2>Portfolio web (Concepto)</h2>
+                    <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
+                    <form action="https://edddos.github.io/EDDDoSportfolio.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h4>¿Quién soy?</h4>
+            <div class="about_info">
+                <p>Mi nombre es Gustavo Eduardo, me dedico al desarrollo Front-end, a veces diseño y edición de imágenes o ilustración pero por pasatiempo.</p>
+                <p>Soy apasionado por el mundo creativo con más de un año de experiencia en este ramo, me encanta la diea de brindar siempre la mejor experiencia al usuario ofreciendo diseño y funciones óptimas, empáticas y eficientes.</p>
+                <p>Trabajo con tecnologías como <strong>odoo</strong>, <strong>JavaScript</strong>, <strong>SASS y LESS</strong>, <strong>Python Básico</strong>, <strong>Bootstrap básico</strong>.</p>
+                <p><strong>¿Quieres conocer más sobre mi experiencia y aptitudes?</strong></p>
+                <p class="about_enlace"><a href="documents/Currículum.pdf">Currículum <i class="fa-solid fa-cloud-arrow-down"></i></a></p>
+            </div>
+        </section>
+
+        <section class="galeria" id="galeria">
+            <h4>Galería de Proyectos</h4>
+            <div class="galeria_img">
+                <img src="multimedia/Gallery/img_1.jpg" alt="">
+                <p>Adobe Illustrator - Photoshop</p>
+                <img src="multimedia/Gallery/img_2.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_3.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_4.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_5.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_6.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_7.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_8.jpg" alt="">
+                <p>Krita</p>
+                <img src="multimedia/Gallery/img_9.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_10.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_11.jpg" alt="">
+                <p>Krita</p>
+                <img src="multimedia/Gallery/img_12.jpg" alt="">
+                <p>Adobe Illustrator - Photoshop</p>
+                <img src="multimedia/Gallery/img_13.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_14.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_15.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_16.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_17.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_18.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_19.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_20.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_21.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_22.jpg" alt="">
+                <p>Krita</p>
+                <img src="multimedia/Gallery/img_23.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_24.jpg" alt="">
+                <p>Adobe Illustrator - Photoshop</p>
+                <img src="multimedia/Gallery/img_25.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_26.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_27.jpg" alt="">
+                <p>Adobe Photoshop</p>
+                <img src="multimedia/Gallery/img_28.jpg" alt="">
+                <p>Adobe Illustrator - Photoshop</p>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <h3>CONTACTO 📧</h3>
+            <div class="contacto_contacto">
+                <p>Puedes contactarme a través de los siguientes medios 👋</p>
+                <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/525581344961"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:eddo.santamaria@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="redes">
+                <p>Eduardo Santamaría - 2022.</p>
+                <!-- <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                <!-- <a href="#"><i class="fa-solid fa-hashtag"></i></a> -->
+                <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
