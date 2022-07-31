@@ -31,9 +31,6 @@ const bar_menu = document.querySelector('.bar_menu');
 
 function addClass(){
     menu.classList.toggle('lateral_menu_show');
-    let linkedin = document.querySelector('nav .menu .linkedin');
-    let twitter = document.querySelector('nav .menu .twitter');
-    let bar_menu = document.querySelector('nav .menu .bar_menu');
 }
 
 function desaparecerMenu(){
