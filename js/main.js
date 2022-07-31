@@ -1,37 +1,33 @@
+// Animaciones
 AOS.init();
 
-// Parallax
-// document.addEventListener("mousemove", parallax);
-// function parallax(e){
-//     this.querySelectorAll('.layer').forEach(Layer => {
-//         const speed = Layer.getAttribute('data-speed');
+// Filtrar imágenes de la galería
+let list = document.querySelectorAll('.list');
+let itemBox = document.querySelectorAll('.itemBox');
 
-//         const x = (window.innerWidth - e.pageX*speed)/100
-//         const y = (window.innerHeight - e.pageY*speed)/100
+for(let i = 0; i < list.length; i++){
+    list[i].addEventListener('click', function(){
+        for(let j = 0; j < list.length; j++){
+            list[j].classList.remove('active');
+        }
+        this.classList.add('active');
 
-//         Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-//     });
-// }
+        let dataFilter = this.getAttribute('data-filter');
 
-// Menu Lateral
-const menu = document.querySelector('.lateral_menu');
-const bar_menu = document.querySelector('.bar_menu');
+        for(let k =0 ; k < itemBox.length; k++){
+            itemBox[k].classList.remove('active');
+            itemBox[k].classList.add('hide');
 
-function addClass(){
-    menu.classList.toggle('lateral_menu_show');
-}
-
-function desaparecerMenu(){
-    menu.classList.remove('lateral_menu_show');
+            if(itemBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+                itemBox[k].classList.remove('hide');
+                itemBox[k].classList.add('active');
+            }
+        }
+    });
 }
 
 // Scroll
 window.addEventListener('scroll', ()=>{
-    // const scrollPx = window.scrollY;
-
-    let header = document.querySelector('nav');
-    header.classList.toggle('header-bg', window.scrollY > 300);
-
-    let upload = document.querySelector('.subir');
-    upload.classList.toggle('subir-show', window.scrollY > 500);
-})
+    let upload = document.querySelector('.up');
+    upload.classList.toggle('up_show', window.scrollY > 500);
+});

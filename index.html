@@ -23,189 +23,204 @@
 </head>
 <body>
     <div class="contenedor">
-    <div class="container">
-        <header id="encabezado">
-            <nav>
-                <div class="logotipo">
-                    <a href="#">
-                        <img src="multimedia/logo/eduardo_logo_removebg_.png" alt="">
-                    </a>
+        <header id="home">
+            <!-- Menu -->
+            <nav class="main_menu">
+                <div class="main_menu__logo">
+                    <a href="#home"><img src="multimedia/logo/Logotipo.png" alt="Logotipo"></a>
                 </div>
-                <div class="menu">
-                    <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/EffectGM"><i class="fa-solid fa-hashtag"></i></a>
-                    <a class="bar_menu" onclick="addClass()"><i class="fa-solid fa-bars"></i></a>
+                <div class="main_menu__opciones">
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Acerca de</a>
+                    <a href="#project">Proyectos</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </nav>
-            <div class="lateral_menu">
-                <a onclick="desaparecerMenu()" href="#">Inicio <i class="fa-solid fa-chevron-right"></i></a>
-                <a onclick="desaparecerMenu()" href="#proyectos">Proyectos <i class="fa-solid fa-chevron-right"></i></a>
-                <a onclick="desaparecerMenu()" href="#about">Acerca de mí <i class="fa-solid fa-chevron-right"></i></a>
-                <a onclick="desaparecerMenu()" href="#galeria">Galería <i class="fa-solid fa-chevron-right"></i></a>
-                <a onclick="desaparecerMenu()" href="#contacto">Contacto <i class="fa-solid fa-chevron-right"></i></a>
-            </div>
 
-            <div data-aos="fade-right" data-aos-duration="3000" class="presentacion">
-                <h1>Diseño + <br> Desarrollo Web</h1>
-                <p>Soy desarrollador y diseñador web en las tecnologías de odoo y fuera de la herramienta. Apasionado por el mundo creativo y apasionado por brindar la mejor experiencia para el usuario.</p>
-                <div class="scroll">
-                    <a href="#proyectos"><i class="fa-solid fa-angles-down"></i></a>
+            <!-- Resumen Inicial -->
+            <div class="informacion">
+                <div class="informacion__img" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="multimedia/background/Luna_img.png" alt="Imagen Montaje">
+                </div>
+                <div class="informacion__texto">
+                    <h1>Diseño <br></h1>
+                    <span >+</span>
+                    <br>
+                    <span>Desarrollo Web</span>
+                    <p>Soy desarrollador y diseñador web en las tecnologías de odoo y fuera de la herramienta. Apasionado por el mundo creativo y apasionado por brindar la mejor experiencia para el usuario.</p>
+                    <div data-aos="fade-up" data-aos-duration="1500" class="informacion__redes">
+                        <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/EffectGM"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://wa.me/525581344961"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:eddo.santamaria@gmail.com"><i class="fa-solid fa-at"></i></a>
+                    </div>
                 </div>
             </div>
         </header>
-        
-        <div class="subir">
-            <a href="#encabezado"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
 
-        <section class="proyectos">
-            <h2 class="proyectos_title" id="proyectos">P R O Y E C T O S</h2>
-            <div class="proyectos__element">
-                <div data-aos="fade-right" data-aos-duration="3000"  class="proyectos__imagen">
-                    <img src="multimedia/projects/twitter_project.jpg" alt="">
+        <div id="about"></div>
+        <section class="skills">
+            <div class="skills__container">
+                <div data-aos="fade-up" data-aos-duration="1500" class="skills__container__skills skills__container__photoshop">
+                    <img src="multimedia/icons/photoshop.png" alt="">
+                    <p><strong>Photoshop</strong><br>Tengo experiencia realizando algunas imágenes para uso personal para web de estilo montaje o publicitario.</p>
                 </div>
-                <div class="proyectos__descripcion">
-                    <h2>Clon de Twitter</h2>
-                    <p>Maquetado realizado en el año 2022 inspirado 100% en twitter, realizado hasta al diseño responsivo.</p>
-                    <form action="https://edddos.github.io/">
-                        <input type="submit" value="V I S I T A R" />
-                    </form>
+                <div data-aos="fade-down" data-aos-duration="1500" class="skills__container__skills skills__container__webdeveloper">
+                    <img src="multimedia/icons/coding.png" alt="">
+                    <p><strong>Desarrollo Web</strong><br>Tengo experiencia en el desarrollo web Front-End utilizando las principales tecnologías, SASS, LESS, JavaScript, Bootstrap.</p>
                 </div>
-            </div>
-
-            <div class="proyectos__element">
-                <div class="proyectos__descripcion">
-                    <h2>Clon de Funimation</h2>
-                    <p>Maquetado realizado en el año 2022 inspirado 100% en la plataforma de Streaming "Funimation", dedicada a transmitir Anime.</p>
-                    <form action="https://edddos.github.io/EDDDosAnime.github.io/">
-                        <input type="submit" value="V I S I T A R" />
-                    </form>
+                <div data-aos="fade-up" data-aos-duration="1500" class="skills__container__skills skills__container__adobexd">
+                    <img src="multimedia/icons/adobe-Illustrator-logo-1-1.png" alt="">
+                    <p><strong>Illustrator</strong><br>He hecho uso de Illustrator a un nivel más básico para desarrollar algunas ilustraciones</p>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="3000" class="proyectos__imagen">
-                    <img src="multimedia/projects/funimation_project.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="proyectos__element">
-                <div data-aos="fade-right" data-aos-duration="3000"  class="proyectos__imagen">
-                    <img src="multimedia/projects/portfolio_concept_project.jpg" alt="">
-                </div>
-                <div class="proyectos__descripcion">
-                    <h2>Portfolio web (Concepto)</h2>
-                    <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
-                    <form action="https://edddos.github.io/EDDDoSportfolio.github.io/">
-                        <input type="submit" value="V I S I T A R" />
-                    </form>
-                </div>
-            </div>
-
-            <div class="proyectos__element">
-                <div class="proyectos__descripcion">
-                    <h2>B.Travel</h2>
-                    <p>Maquetación de un sitio web dedicado a los viajes de negocios principalmente, hecho en 2022 con las tecnologías de HTML5, SASS y JavaScript.</p>
-                    <form action="https://edddos.github.io/travel.github.io/">
-                        <input type="submit" value="V I S I T A R" />
-                    </form>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="3000" class="proyectos__imagen">
-                    <img src="multimedia/projects/b_travel.jpg" alt="">
+                <div data-aos="fade-down" data-aos-duration="1500" class="skills__container__skills skills__container__illustrator">
+                    <img src="multimedia/icons/ADOBE-XD.png" alt="">
+                    <p><strong>Adobe Xd</strong><br>He hecho uso del Software para realizar el prototipo de sitios antes de comenzar su maquetado.</p>
                 </div>
             </div>
         </section>
 
-        <section class="about" id="about">
-            <h4>¿Quién soy?</h4>
-            <div class="about_info">
-                <p>Mi nombre es Gustavo Eduardo, me dedico al desarrollo Front-end, a veces diseño y edición de imágenes o ilustración pero por pasatiempo.</p>
-                <p>Soy apasionado por el mundo creativo con más de un año de experiencia en este ramo, me encanta la idea de brindar siempre la mejor experiencia al usuario ofreciendo diseño y funciones óptimas, empáticas y eficientes.</p>
-                <p>Trabajo con tecnologías como <strong>odoo</strong>, <strong>JavaScript básico</strong>, <strong>SASS y LESS</strong>, <strong>Python básico</strong>, <strong>Bootstrap básico</strong>.</p>
-                <p><strong>¿Quieres conocer más sobre mi experiencia y aptitudes?</strong></p>
-                <p class="about_enlace"><a href="documents/Currículum.pdf">Currículum <i class="fa-solid fa-cloud-arrow-down"></i></a></p>
-            </div>
+        <section class="acerca">
+            <article class="acerca_info">
+                <h2>Acerca de mi</h2>
+                <p>Mi nombre es Gustavo Eduardo, me dedico al desarrollo Front-end, a veces diseño y edición de imágenes o ilustración pero por pasatiempo.
+                Soy apasionado por el mundo creativo con más de un año de experiencia en este ramo, me encanta la idea de brindar siempre la mejor experiencia al usuario ofreciendo diseño y funciones óptimas, empáticas y eficientes.    
+                Trabajo con tecnologías como <span>odoo</span>, <span>JavaScript básico</span>, <span>SASS</span> y <span>LESS</span>, <span>Python básico</span>, <span>Bootstrap básico</span> Cunto también con conocimiento básicos sobre <span>UX, leyes y fundamentos</span>.<br><br>
+                <span class="acerca_info_pregunta">
+                ¿Quieres conocer más sobre mi experiencia y aptitudes?
+                </span>
+                </p>
+                <br><br><br>
+                <a class="btn" href="/documents/Eduardo_Santamari_CV.pdf" download>Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a>
+            </article>
+        </section>
+
+        <section class="web_projects" id="project">
+            <h2>Algunos proyectos web</h2>
+            <article class="web_projects__article">
+                <div data-aos="fade-right" data-aos-duration="1500" class="web_projects__article__containers">
+                    <div class="web_projects__article__containers_img">
+                        <img src="multimedia/projects/b_travel.jpg" alt="">
+                    </div>
+                    <div class="web_projects__article__containers_info">
+                        <h3>B.Travel</h3>
+                        <p>Maquetación de un sitio web dedicado a los viajes de negocios principalmente, hecho en 2022 con las tecnologías de HTML5, SASS y JavaScript.</p>
+                        <a class="btn" href="https://edddos.github.io/travel.github.io/?" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1500" class="web_projects__article__containers">
+                    <div class="web_projects__article__containers_img">
+                        <img src="multimedia/projects/twitter_project.jpg" alt="">
+                    </div>
+                    <div class="web_projects__article__containers_info">
+                        <h3>Clon de Twitter</h3>
+                        <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
+                        <a class="btn" href="https://edddos.github.io/?" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1500" class="web_projects__article__containers">
+                    <div class="web_projects__article__containers_img">
+                        <img src="multimedia/projects/portfolio_concept_project.jpg" alt="">
+                    </div>
+                    <div class="web_projects__article__containers_info">
+                        <h3>Portfolio web (Concepto)</h3>
+                        <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
+                        <a class="btn" href="https://edddos.github.io/EDDDoSportfolio.github.io/?" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1500" class="web_projects__article__containers">
+                    <div class="web_projects__article__containers_img">
+                        <img src="multimedia/projects/funimation_project.jpg" alt="">
+                    </div>
+                    <div class="web_projects__article__containers_info">
+                        <h3>Con de Funimation</h3>
+                        <p>Maquetado realizado en el año 2022 inspirado 100% en la plataforma de Streaming "Funimation", dedicada a transmitir Anime.</p>
+                        <a class="btn" href="https://edddos.github.io/EDDDosAnime.github.io/?" target="_blank">Visitar</a>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section class="galeria" id="galeria">
-            <h4>Galería de Ilustraciones y Proyectos (Photoshop, Illustrator, Krita).</h4>
-            <hr style="opacity: 0.4; margin-bottom: 5%;">
-            <div class="galeria_img">
-                <img src="multimedia/Gallery/img_1.jpg" alt="">
-                <p>Adobe Illustrator - Photoshop</p>
-                <img src="multimedia/Gallery/img_2.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_3.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_4.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_5.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_6.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_7.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_8.jpg" alt="">
-                <p>Krita</p>
-                <img src="multimedia/Gallery/img_9.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_10.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_11.jpg" alt="">
-                <p>Krita</p>
-                <img src="multimedia/Gallery/img_12.jpg" alt="">
-                <p>Adobe Illustrator - Photoshop</p>
-                <img src="multimedia/Gallery/img_13.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_14.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_15.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_16.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_17.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_18.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_19.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_20.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_21.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_22.jpg" alt="">
-                <p>Krita</p>
-                <img src="multimedia/Gallery/img_23.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_24.jpg" alt="">
-                <p>Adobe Illustrator - Photoshop</p>
-                <img src="multimedia/Gallery/img_25.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_26.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_27.jpg" alt="">
-                <p>Adobe Photoshop</p>
-                <img src="multimedia/Gallery/img_28.jpg" alt="">
-                <p>Adobe Illustrator - Photoshop</p>
+            <h4>Galería de proyectos con Photoshop, Illustrator y Krita</h4>
+            <div class="items">
+                <p>Filtrar</p>
+                <ul>
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="photoshop">Photoshop</li>
+                    <li class="list" data-filter="illustrator">Illustrator</li>
+                    <li class="list" data-filter="krita">Krita</li>
+                </ul>
+            </div>
+            <hr style="opacity: 0.4; margin-bottom: 5%;">  
+            <div class="imagenes">
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop.jpg" alt=""></div>
+                <div class="itemBox" data-item="illustrator"><img src="multimedia/Gallery/illustrator.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_2.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_3.jpg" alt=""></div>
+                <div class="itemBox" data-item="krita"><img src="multimedia/Gallery/krita_3.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_4.jpg" alt=""></div>
+                <div class="itemBox" data-item="illustrator"><img src="multimedia/Gallery/illustrator_2.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_5.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_6.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_7.jpg" alt=""></div>
+                <div class="itemBox" data-item="krita"><img src="multimedia/Gallery/krita.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_8.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_9.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_10.jpg" alt=""></div>
+                <div class="itemBox" data-item="illustrator"><img src="multimedia/Gallery/illsutrator_4.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_11.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_12.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_14.jpg" alt=""></div>
+                <div class="itemBox" data-item="krita"><img src="multimedia/Gallery/krita_2.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_15.jpg" alt=""></div>
+                <div class="itemBox" data-item="illustrator"><img src="multimedia/Gallery/illustrator_3.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_16.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_17.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_18.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_19.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_20.jpg" alt=""></div>
+                <div class="itemBox" data-item="photoshop"><img src="multimedia/Gallery/photoshop_21.jpg" alt=""></div>
             </div>
         </section>
 
-        <section class="contacto" id="contacto">
-            <h3>CONTACTO 📧</h3>
-            <div class="contacto_contacto">
-                <p>Puedes contactarme a través de los siguientes medios 👋</p>
-                <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://wa.me/525581344961"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:eddo.santamaria@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
-            </div>
+        <section data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="contacto" id="contacto">
+            <h3>¡Me gustaría saludarte!</h3>
+            <form id="formulario" action="https://formsubmit.co/eddo.santamaria@gmail.com" method="POST">
+                <label for="Nombre">Nombre
+                    <br>
+                <input required id="Nombre" type="text" name="name" placeholder="Fernanda García">
+                </label>
+
+                <label for="email">Correo Electrónico
+                    <br>
+                <input required id="email" type="email" name="email" placeholder="tucorreo@example.com">
+                </label>
+
+                <label for="subject">Asunto
+                    <br>
+                <input required id="subject" type="text" name="subject" placeholder="¡Hola! Tengo una pregunta...">
+                </label>
+
+                <label for="comments">Mensaje
+                    <br>
+                <textarea required name="comments" id="comments"  maxlength ="0"></textarea>
+                </label>
+
+                <input class="btn" id="enviar" type="submit" value="Enviar">
+            </form>
         </section>
+
+        <div class="up">
+            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
 
         <footer>
-            <div class="redes">
-                <p>Eduardo Santamaría - 2022.</p>
-                <!-- <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> -->
-                <!-- <a href="#"><i class="fa-solid fa-hashtag"></i></a> -->
-                <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
-            </div>
+            <p>Eduardo Santamaría 2022.</p>
         </footer>
-    </div>
     </div>
     <script src="js/main.js"></script>
 </body>
