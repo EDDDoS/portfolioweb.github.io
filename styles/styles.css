@@ -268,7 +268,7 @@ header .informacion .informacion__texto .informacion__redes a:nth-child(4):hover
   margin-top: 2%;
   text-align: center;
   font-size: 35px;
-  color: #372049;
+  color: #2f2f2f;
 }
 .galeria .items {
   margin-top: 2%;
@@ -428,6 +428,7 @@ footer p {
   }
 }
 .up {
+  padding-right: 45px;
   margin-bottom: 25px;
   width: 30px;
   text-align: center;
