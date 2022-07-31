@@ -23,41 +23,40 @@
 </head>
 <body>
     <div class="contenedor">
-        <header id="home">
-            <!-- Menu -->
-            <nav class="main_menu">
-                <div class="main_menu__logo">
-                    <a href="#home"><img src="multimedia/logo/Logotipo.png" alt="Logotipo"></a>
+    <div class="container">
+        <header id="encabezado">
+            <nav>
+                <div class="logotipo">
+                    <a href="#">
+                        <img src="multimedia/logo/eduardo_logo_removebg_.png" alt="">
+                    </a>
                 </div>
-                <div class="main_menu__opciones">
-                    <a href="#home">Inicio</a>
-                    <a href="#about">Acerca de</a>
-                    <a href="#project">Proyectos</a>
-                    <a href="#galeria">Galería</a>
-                    <a href="#contacto">Contacto</a>
+                <div class="menu">
+                    <a class="linkedin" href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="twitter" href="https://twitter.com/EffectGM"><i class="fa-solid fa-hashtag"></i></a>
+                    <a class="bar_menu" onclick="addClass()"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </nav>
+            <div class="lateral_menu">
+                <a onclick="desaparecerMenu()" href="#">Inicio <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#proyectos">Proyectos <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#about">Acerca de mí <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#galeria">Galería <i class="fa-solid fa-chevron-right"></i></a>
+                <a onclick="desaparecerMenu()" href="#contacto">Contacto <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
 
-            <!-- Resumen Inicial -->
-            <div class="informacion">
-                <div class="informacion__img" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="multimedia/background/Luna_img.png" alt="Imagen Montaje">
-                </div>
-                <div class="informacion__texto">
-                    <h1>Diseño <br></h1>
-                    <span >+</span>
-                    <br>
-                    <span>Desarrollo Web</span>
-                    <p>Soy desarrollador y diseñador web en las tecnologías de odoo y fuera de la herramienta. Apasionado por el mundo creativo y apasionado por brindar la mejor experiencia para el usuario.</p>
-                    <div data-aos="fade-up" data-aos-duration="1500" class="informacion__redes">
-                        <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/EffectGM"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://wa.me/525581344961"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="mailto:eddo.santamaria@gmail.com"><i class="fa-solid fa-at"></i></a>
-                    </div>
+            <div data-aos="fade-right" data-aos-duration="3000" class="presentacion">
+                <h1>Diseño + <br> Desarrollo Web</h1>
+                <p>Soy desarrollador y diseñador web en las tecnologías de odoo y fuera de la herramienta. Apasionado por el mundo creativo y apasionado por brindar la mejor experiencia para el usuario.</p>
+                <div class="scroll">
+                    <a href="#proyectos"><i class="fa-solid fa-angles-down"></i></a>
                 </div>
             </div>
         </header>
+        
+        <div class="subir">
+            <a href="#encabezado"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
 
         <div id="about"></div>
         <section class="skills">
@@ -96,50 +95,59 @@
             </article>
         </section>
 
-        <section class="web_projects" id="project">
-            <h2>Algunos proyectos web</h2>
-            <article class="web_projects__article">
-                <div data-aos="fade-right" data-aos-duration="1500" class="web_projects__article__containers">
-                    <div class="web_projects__article__containers_img">
-                        <img src="multimedia/projects/b_travel.jpg" alt="">
-                    </div>
-                    <div class="web_projects__article__containers_info">
-                        <h3>B.Travel</h3>
-                        <p>Maquetación de un sitio web dedicado a los viajes de negocios principalmente, hecho en 2022 con las tecnologías de HTML5, SASS y JavaScript.</p>
-                        <a class="btn" href="https://edddos.github.io/travel.github.io/?" target="_blank">Visitar</a>
-                    </div>
+        <section class="proyectos">
+            <h2 class="proyectos_title" id="proyectos">P R O Y E C T O S</h2>
+            <div class="proyectos__element">
+                <div class="proyectos__descripcion">
+                    <h2>B.Travel</h2>
+                    <p>Maquetación de un sitio web dedicado a los viajes de negocios principalmente, hecho en 2022 con las tecnologías de HTML5, SASS y JavaScript.</p>
+                    <form action="https://edddos.github.io/travel.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1500" class="web_projects__article__containers">
-                    <div class="web_projects__article__containers_img">
-                        <img src="multimedia/projects/twitter_project.jpg" alt="">
-                    </div>
-                    <div class="web_projects__article__containers_info">
-                        <h3>Clon de Twitter</h3>
-                        <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
-                        <a class="btn" href="https://edddos.github.io/?" target="_blank">Visitar</a>
-                    </div>
+                <div data-aos="fade-left" data-aos-duration="3000" class="proyectos__imagen">
+                    <img src="multimedia/projects/b_travel.jpg" alt="">
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1500" class="web_projects__article__containers">
-                    <div class="web_projects__article__containers_img">
-                        <img src="multimedia/projects/portfolio_concept_project.jpg" alt="">
-                    </div>
-                    <div class="web_projects__article__containers_info">
-                        <h3>Portfolio web (Concepto)</h3>
-                        <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
-                        <a class="btn" href="https://edddos.github.io/EDDDoSportfolio.github.io/?" target="_blank">Visitar</a>
-                    </div>
+            </div>
+
+            <div class="proyectos__element">
+                <div data-aos="fade-right" data-aos-duration="3000"  class="proyectos__imagen">
+                    <img src="multimedia/projects/twitter_project.jpg" alt="">
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1500" class="web_projects__article__containers">
-                    <div class="web_projects__article__containers_img">
-                        <img src="multimedia/projects/funimation_project.jpg" alt="">
-                    </div>
-                    <div class="web_projects__article__containers_info">
-                        <h3>Con de Funimation</h3>
-                        <p>Maquetado realizado en el año 2022 inspirado 100% en la plataforma de Streaming "Funimation", dedicada a transmitir Anime.</p>
-                        <a class="btn" href="https://edddos.github.io/EDDDosAnime.github.io/?" target="_blank">Visitar</a>
-                    </div>
+                <div class="proyectos__descripcion">
+                    <h2>Clon de Twitter</h2>
+                    <p>Maquetado realizado en el año 2022 inspirado 100% en twitter, realizado hasta al diseño responsivo.</p>
+                    <form action="https://edddos.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
                 </div>
-            </article>
+            </div>
+            
+            <div class="proyectos__element">
+                <div class="proyectos__descripcion">
+                    <h2>Portfolio web (Concepto)</h2>
+                    <p>Esta web fue realizada en el año 2019 como un concepto de Portfolio web personal, brindando secciones esenciales, presentación, proyectos y comunicación, únicamente es maquetación.</p>
+                    <form action="https://edddos.github.io/EDDDoSportfolio.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="3000"  class="proyectos__imagen">
+                    <img src="multimedia/projects/portfolio_concept_project.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="proyectos__element">
+                <div data-aos="fade-left" data-aos-duration="3000" class="proyectos__imagen">
+                    <img src="multimedia/projects/funimation_project.jpg" alt="">
+                </div>
+                <div class="proyectos__descripcion">
+                    <h2>Clon de Funimation</h2>
+                    <p>Maquetado realizado en el año 2022 inspirado 100% en la plataforma de Streaming "Funimation", dedicada a transmitir Anime.</p>
+                    <form action="https://edddos.github.io/EDDDosAnime.github.io/">
+                        <input type="submit" value="V I S I T A R" />
+                    </form>
+                </div>
+            </div>
         </section>
 
         <section class="galeria" id="galeria">
@@ -214,13 +222,25 @@
             </form>
         </section>
 
-        <div class="up">
-            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
+        <section class="contacto_alternativo" id="contacto">
+            <h3>O si lo prefieres, me puedes contactar por alguno de estos medios 📧</h3>
+            <div class="contacto_alternativo__contacto">
+                <p>Puedes contactarme a través de los siguientes medios 👋</p>
+                <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/525581344961"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:eddo.santamaria@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            </div>
+        </section>
 
         <footer>
-            <p>Eduardo Santamaría 2022.</p>
+            <div class="redes">
+                <p>Eduardo Santamaría - 2022.</p>
+                <!-- <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                <!-- <a href="#"><i class="fa-solid fa-hashtag"></i></a> -->
+                <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
+            </div>
         </footer>
+    </div>
     </div>
     <script src="js/main.js"></script>
 </body>

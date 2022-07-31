@@ -1,4 +1,3 @@
-// Animaciones
 AOS.init();
 
 // Filtrar imágenes de la galería
@@ -26,8 +25,42 @@ for(let i = 0; i < list.length; i++){
     });
 }
 
+// Menu Lateral
+const menu = document.querySelector('.lateral_menu');
+const bar_menu = document.querySelector('.bar_menu');
+
+function addClass(){
+    menu.classList.toggle('lateral_menu_show');
+    let linkedin = document.querySelector('nav .menu .linkedin');
+    let twitter = document.querySelector('nav .menu .twitter');
+    let bar_menu = document.querySelector('nav .menu .bar_menu');
+}
+
+function desaparecerMenu(){
+    menu.classList.remove('lateral_menu_show');
+}
+
 // Scroll
 window.addEventListener('scroll', ()=>{
-    let upload = document.querySelector('.up');
-    upload.classList.toggle('up_show', window.scrollY > 500);
-});
+    // const scrollPx = window.scrollY;
+
+    let header = document.querySelector('nav');
+    header.classList.toggle('header-bg', window.scrollY > 300);
+
+    let linkedin = document.querySelector('nav .menu .linkedin');
+    let twitter = document.querySelector('nav .menu .twitter');
+    let bar_menu = document.querySelector('nav .menu .bar_menu');
+
+    if(window.scrollY > 300){
+        linkedin.style.color = '#f2f2f2';
+        twitter.style.color = '#f2f2f2';
+        bar_menu.style.color = '#f2f2f2';
+    } else {
+        linkedin.style.color = '#2f2f2f';
+        twitter.style.color = '#2f2f2f';
+        bar_menu.style.color = '#2f2f2f';
+    }
+
+    let upload = document.querySelector('.subir');
+    upload.classList.toggle('subir-show', window.scrollY > 500);
+})
